@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhrumi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style-with-prefix.css">
+    <style>
+        .srouce {
+            text-align: center;
+            color: #ffffff;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <center>
+            <h1 class="title" style=" color: beige;">Happy Birthday !</h1>
+            <h1 class="title" style=" color: beige;">DHRUMI</h1>
+        </center>
+        <div class="form-container">
+
+            <div class="srouce"></div>
+            <div style="padding:5%"></div>
+
+            <div class="form-body" onsubmit="openLink()">
+                <i>
+                    <h4 class="title">Crack the code to access your gift</h3>
+                </i>
+                <br>
+                <form action="" class="the-form">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password">
+                    <label for="hint" style="color:#cbcbcb">Hint : What is the real name of naagin ? (7th std) </label>
+                    <input type="submit" value="Submit">
+                </form>
+                <!-- <h3>Start with the intro in your gift</h3> -->
+            </div><!-- FORM BODY-->
+        </div><!-- FORM CONTAINER -->
+    </div>
+    <script>
+        function openLink() {
+            event.preventDefault();
+            var password = document.getElementById("password").value;
+            console.log(password);
+            if (password == "shreya") {
+                window.location.replace("https://drive.google.com/drive/folders/1y4MahOVBi0U5tMvAza0nJR2-btMpeoXE?usp=sharing");
+            } else {
+                alert("Wrong Password");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
